@@ -6,10 +6,10 @@ use strict;
 
 our @EXPORT    = qw( sendmsg recvmsg );
 our @EXPORT_OK = qw( pack_cmsghdr unpack_cmsghdr ); # Undocumented!
-our $VERSION = '0.04_02';
+our $VERSION = '0.04_03';
 
 # Forcibly export our sendmsg, recvmsg methods
-INIT {
+BEGIN {
   *IO::Socket::sendmsg = \&sendmsg;
   *IO::Socket::recvmsg = \&recvmsg;
 }
@@ -23,7 +23,7 @@ sub flags {
   $self->{flags};
 }
 
-INIT {
+BEGIN {
   for my $attr (qw|name buf control|) {
     no strict 'refs';
 
