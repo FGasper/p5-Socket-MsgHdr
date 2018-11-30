@@ -17,4 +17,18 @@ WriteMakefile(
     INC               => '-I.', # e.g., '-I. -I/usr/include/other'
 	# Un-comment this if you add C files to link with later:
     # OBJECT            => '$(O_FILES)', # link all the C files too
+
+    META_MERGE => {
+        'meta-spec' => { version => 2 },
+        resources => {
+            repository => {
+                type => 'git',
+                url => 'git://github.com/FGasper/p5-Socket-MsgHdr.git',
+                web => 'https://github.com/FGasper/p5-Socket-MsgHdr',
+            },
+            bugtracker => {
+                web => 'https://github.com/FGasper/p5-Socket-MsgHdr/issues',
+            },
+        },
+    },
 );
