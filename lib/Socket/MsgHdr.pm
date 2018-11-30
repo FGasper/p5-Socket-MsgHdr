@@ -280,13 +280,11 @@ module.
 
 =head1 SEE ALSO
 
-L<sendmsg(2)>, L<recvmsg(2)>, L<File::FDpasser>, L<"RFC 2292">
+L<sendmsg(2)>, L<recvmsg(2)>, L<File::FDpasser>, L<RFC 2292|https://tools.ietf.org/html/rfc2292>
 
 =head1 AUTHOR
 
-Michael J. Pomraning
-
-Please report bugs to E<lt>mjp AT cpan DOT org E<gt>
+Michael J. Pomraning, co-maintained by Felipe Gasper
 
 =head1 COPYRIGHT AND LICENSE
 
