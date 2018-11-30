@@ -13,7 +13,10 @@ plan skip_all => "Test::Pod::Coverage required" if $@;
 	};
 
 pod_coverage_ok("Socket::MsgHdr",
-                { also_private => [ qr/^(?:un)?pack_cmsghdr$/ ] },
+                { also_private => [
+                    qr/^(?:un)?pack_cmsghdr$/,
+                    qr/^control$/,
+                ] },
                 "Socket::MsgHdr OO and default EXPORTs are covered");
 
 }
