@@ -6,7 +6,7 @@ use strict;
 
 our @EXPORT    = qw( sendmsg recvmsg );
 our @EXPORT_OK = qw( pack_cmsghdr unpack_cmsghdr ); # Undocumented!
-our $VERSION = '0.04_03';
+our $VERSION = '0.05';
 
 # Forcibly export our sendmsg, recvmsg methods
 BEGIN {
