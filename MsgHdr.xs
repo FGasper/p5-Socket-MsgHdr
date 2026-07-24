@@ -60,7 +60,7 @@ smhobj_2msghdr(SV *obj, struct Socket__MsgHdr *mh)
     }
 
     if ((svp = hv_fetch(hash, "flags", 5, FALSE)) && SvOK(*svp)) {
-        mh->m.msg_flags    = SvIV(*svp);
+        mh->m.msg_flags = SvIV(*svp);
     }
 }
 
